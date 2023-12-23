@@ -1,8 +1,49 @@
 <html>
 <head>
 <title></title>
-</head>
 
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            transform: translate(-50%, -50%);
+            z-index: -1;
+        }
+
+        /* Optional: Add additional styling for content overlaying the video */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <video autoplay muted loop poster="placeholder-image.jpg">
+        <!-- Replace 'video.mp4' with the path to your video file -->
+        <source src="ground.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <div class="content"></div>
+
+
+</head>
 <style>
 body {
 	background-image: url('bg.png');
@@ -10,12 +51,11 @@ body {
 	background-repeat:no-repeat;
 }
 </style>
-<h1><b><u><i>Thankyou for visiting my 2nd page</i></u></b></h1>
+<h2 style=color:white><b><u><i>Thankyou for visiting my 2nd page</i></u></b></h2>
 
-<h2><i><center>*Some other apps are available here*</center></i></h2>
 <center><h3 style=color:blue><p id="changing-color">~Note : Touch the logo to login or install</p id="changing color"></h3 style=color:blue></center>
 <script>
-        var colors = ["blue", "indigo", "red", "green"];
+        var colors = ["blue", "white", "green","black"];
         var i = 0;
         setInterval(function() {
             document.getElementById('changing-color').style.color = colors[i];
@@ -23,25 +63,24 @@ body {
         }, 1000);
     </script>
 
-<h3><li>Spotify</li></h3>
+<h3 style=color:blue><li>Spotify</li></h3>
 <a href="https://open.spotify.com" target="_blank">
-        <img src="spot.jpg" alt="Spotify Logo" style="width: 70px; height: 70px;"></a>
+        <img src="spot.jpg" alt="Spotify Logo" style="width: 80px; height: 80px;"></a>
 <audio src="song.mp3" autoplay loop controls></audio>
- <p><i><h4>The primary purpose of Spotify is to stream music. Users can access a vast library of songs and albums, spanning various genres and artists, and create personalized playlists. Spotify allows users to create and curate their playlists, combining favorite songs and discovering new tracks. These playlists can be shared with others or kept private.Users can find information about upcoming concerts and events for their favorite artists through Spotify.The platform often includes details such as tour dates, venues. </p></i></h4>
+ 
 
-<h3><li>ChatGPT</li></h3>
+<h3 style=color:white><li>ChatGPT</li></h3>
  <a href="https://chat.openai.com/" target="_blank">
-      <img src="chat.jpg" alt="ChatGPT Logo" style="width: 70px; height: 70px;"></a>
- <p><i><h4> ChatGPT can be used to generate creative content such as articles, blog posts, poetry, or stories. It can assist writers by providing inspiration, generating ideas, or even completing sentences and paragraphs. Users can leverage ChatGPT to draft and edit written content. It can help refine language, suggest improvements, and provide feedback on the structure and coherence of a piece of writing. It can provide diverse perspectives and stimulate creative thinking.</p></i></h4>
+      <img src="chat.jpg" alt="ChatGPT Logo" style="width: 100px; height: 80px;"></a>
+ 
 
-<h3><li>Doulingo</li></h3>
+<h3 style=color:green><li>Doulingo</li></h3>
 <a href="https://www.duolingo.com" target="_blank">
-  <img src="duo.jpg" alt="Duolingo Logo" style="width: 70px; height: 70px;">
-</a>
-<p><i><h4>The primary purpose of Duolingo is to help users learn new languages. The app covers a wide range of languages, from commonly spoken ones like Spanish and French to less widely spoken languages. It uses a variety of exercises to teach vocabulary, grammar, and pronunciation. Duolingo is available as a mobile app, making it convenient for users to learn languages on the go. This accessibility allows for quick and short study sessions whenever and wherever the user prefers.</p></i></h4><br>
+  <img src="duo.jpg" alt="Duolingo Logo" style="width: 100px; height: 80px;">
+</a><br>
 
-
-
+<b><h3 style=color:white>~~~colors: </h3></b>
+<input type="color">
 
 <br>
 <h2><center><a href ="index.html" > less </a></h2></center>
